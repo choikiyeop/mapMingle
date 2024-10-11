@@ -6,13 +6,14 @@ export default function RootLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
+        tabBarLabelPosition: "below-icon",
+        tabBarActiveTintColor: "black",
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: "홈",
-          tabBarActiveTintColor: "black",
           tabBarIcon: ({ color, focused }) =>
             focused ? (
               <Ionicons name="home-sharp" size={24} />
@@ -25,7 +26,6 @@ export default function RootLayout() {
         name="share"
         options={{
           title: "공유기록",
-          tabBarActiveTintColor: "black",
           tabBarIcon: ({ color, focused }) =>
             focused ? (
               <Ionicons name="share" size={24} />
@@ -38,7 +38,6 @@ export default function RootLayout() {
         name="favorite"
         options={{
           title: "즐겨찾기",
-          tabBarActiveTintColor: "black",
           tabBarIcon: ({ color, focused }) =>
             focused ? (
               <Ionicons name="bookmark" size={24} />
@@ -51,7 +50,6 @@ export default function RootLayout() {
         name="my"
         options={{
           title: "마이",
-          tabBarActiveTintColor: "black",
           tabBarIcon: ({ color, focused }) =>
             focused ? (
               <Ionicons name="person" size={24} />
